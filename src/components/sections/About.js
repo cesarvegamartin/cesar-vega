@@ -26,19 +26,19 @@ const About = ({ className, ...customProps }) => (
       Recuerdo el primer día de escuela cuando me había apuntado a algo llamado
       "programación", tenía tanta curiosidad como miedo ya que no conocía nada
       acerca del tema, sólo sabía que se me daban bien las "cosas de
-      ordenadores". Hoy en día ese miedo se ha comvertido en seguridad y en mi
+      ordenadores". Hoy en día ese miedo se ha convertido en seguridad y en mi
       mayor virtud.
     </p>
     <p>
       Empecé con Java desarrollando en Android y aunque me gustaba, decidí hacer
       un curso de web. Es cuando ví el potencial que ofrece el desarrollo web:
-      su sencilled y flexibilidad. Me dí cuenta de que la mayoría de los
+      su sencilled y flexibilidad. Me di cuenta de que la mayoría de los
       proyectos se podrían hacer con esa tecnología y me resultaba emocionante,
       ¡había encontrado la rama que me gustaba!.
     </p>
     <p>
       He trabajado como desarrollador de back-end y front-end, siendo esté
-      último mi preferido ya que se acerca más al usuario. Tengo pasión por como
+      último mi preferido ya que se acerca más al usuario. Tengo pasión por cómo
       funcionan las cosas, una cierta obsesión por la experiencia de usuario y
       me satisface ver el resultado final.
     </p>
