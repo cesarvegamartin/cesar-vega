@@ -115,7 +115,7 @@ const Experience = ({ className, ...customProps }) => (
       </ul>
     </Card>
 
-    <Subtitle style={{ marginBottom: 20 }}>2018</Subtitle>
+    <Subtitle style={{ marginBottom: 20 }}>2017</Subtitle>
 
     <Card
       title="Desarrollador full-stack"
