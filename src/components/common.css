@@ -1,0 +1,33 @@
+html,
+body {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0.25px;
+  color: #58585b;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #58585b;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px solid #58585b;
+  }
+
+  &:active,
+  &:active:visited {
+    color: #ec6544;
+    border-bottom: 1px solid #ec6544;
+  }
+
+  &:visited {
+    color: #58585b;
+  }
+}

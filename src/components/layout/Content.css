@@ -1,0 +1,17 @@
+.content {
+  > * {
+    padding: 140px 20px;
+    margin: 0 auto;
+    max-width: 820px;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+
+  &--color-white {
+    background-color: #ffffff;
+  }
+
+  &--color-grey {
+    background-color: #f7f7f9;
+  }
+}

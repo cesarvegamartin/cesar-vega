@@ -1,0 +1,13 @@
+.blockquote {
+  position: relative;
+  padding-left: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 5px solid #ec6544;
+    height: 100%;
+  }
+}

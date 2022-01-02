@@ -1,30 +1,23 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "@components/layout"
+import Seo from "@components/behaviour/seo"
+import Landing from "@components/sections/Landing"
+import Content from "@components/layout/Content"
+import About from "@components/sections/About"
+import Experience from "@components/sections/Experience"
+import Formation from "@components/sections/Formation"
+import Contact from "@components/sections/Contact"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-      <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
-      <Link to="/using-dsg">Go to "Using DSG"</Link>
-    </p>
+
+    <Content color="white" component={Landing} />
+    <Content color="grey" component={About} />
+    <Content color="white" component={Experience} />
+    <Content color="grey" component={Formation} />
+    <Content color="white" component={Contact} />
   </Layout>
 )
 
