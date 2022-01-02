@@ -3,7 +3,7 @@ import "moment/locale/es"
 
 moment.locale("es")
 
-const formatDate = date => moment(date).format("MMM YYYY").toUpperCase()
+const formatDate = date => moment(date).format("MMMM YYYY").toUpperCase()
 
 const formatInterval = (startDate, endDate) =>
   moment.duration(moment(endDate.endOf("month")).diff(startDate)).humanize()
