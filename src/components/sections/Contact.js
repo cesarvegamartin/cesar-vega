@@ -55,7 +55,7 @@ const Contact = ({ className, ...customProps }) => (
         title="Abrir perfil en linkedin"
         href="https://es.linkedin.com/in/cesarvegamartin"
       >
-        https://es.linkedin.com/in/cesarvegamartin
+        cesarvegamartin
       </a>
     </p>
   </Flex>
