@@ -6,9 +6,9 @@ const Headline = props => {
   const { children, className, ...customProps } = props
 
   return (
-    <div {...customProps} className={`headline ${className}`}>
+    <h3 {...customProps} className={`headline ${className}`}>
       {children}
-    </div>
+    </h3>
   )
 }
 

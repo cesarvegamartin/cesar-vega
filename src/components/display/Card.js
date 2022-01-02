@@ -21,7 +21,7 @@ const Card = props => {
   )
 
   return (
-    <div {...customProps}>
+    <article {...customProps}>
       {title && <Headline>{title}</Headline>}
 
       {subtitle && <Caption>{subtitle}</Caption>}
@@ -33,7 +33,7 @@ const Card = props => {
       )}
 
       {children}
-    </div>
+    </article>
   )
 }
 

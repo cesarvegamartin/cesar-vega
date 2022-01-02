@@ -6,9 +6,9 @@ const Title = props => {
   const { children, className, ...customProps } = props
 
   return (
-    <div {...customProps} className={`title ${className}`}>
+    <h1 {...customProps} className={`title ${className}`}>
       {children}
-    </div>
+    </h1>
   )
 }
 

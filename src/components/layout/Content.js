@@ -6,9 +6,9 @@ const Content = props => {
   const { color, component: Component, ...customProps } = props
 
   return (
-    <div className={`content content--color-${color}`}>
+    <section className={`content content--color-${color}`}>
       <Component {...customProps} />
-    </div>
+    </section>
   )
 }
 
