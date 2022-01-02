@@ -1,4 +1,7 @@
 import moment from "moment"
+import "moment/locale/es"
+
+moment.locale("es")
 
 const formatDate = date => moment(date).format("MMM YYYY").toUpperCase()
 

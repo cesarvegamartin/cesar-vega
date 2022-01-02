@@ -22,7 +22,7 @@ const Landing = ({ className }) => (
     />
 
     <Title style={{ textAlign: "center" }}>CÉSAR VEGA</Title>
-    <Subtitle>Programador web</Subtitle>
+    <Subtitle>Desarrollador web</Subtitle>
   </Flex>
 )
 

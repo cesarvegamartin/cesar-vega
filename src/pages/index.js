@@ -11,7 +11,7 @@ import Contact from "@components/sections/Contact"
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
+    <Seo title="Desarrollador web" />
 
     <Content color="white" component={Landing} />
     <Content color="grey" component={About} />

@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `César Vega | Programador web`,
+    title: `César Vega`,
     description: `He trabajado como desarrollador de back-end y front-end, siendo esté último mi preferido ya que se acerca más al usuario. Tengo pasión por como funcionan las cosas, una cierta obsesión por la experiencia de usuario y me satisface ver el resultado final.`,
     author: `hola.cesar.vega@gmail.com`,
     siteUrl: `https://cesarvega.dev/`,
@@ -24,7 +24,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `César Vega | Desarrollador web`,
+        name: `César Vega`,
         short_name: `César Vega`,
         short_name: `starter`,
         start_url: `/`,
