@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import "./SubTitle.css"
+import "./Subtitle.css"
 
 const Subtitle = props => {
   const { children, className, ...customProps } = props
