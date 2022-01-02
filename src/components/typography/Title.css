@@ -5,4 +5,5 @@
   font-size: 4rem;
   line-height: 120%;
   color: #ec6544;
+  break-before: always;
 }
