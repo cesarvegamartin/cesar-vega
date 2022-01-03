@@ -21,7 +21,7 @@ const Card = props => {
   )
 
   return (
-    <article {...customProps}>
+    <article {...customProps} className="card">
       {title && <Headline>{title}</Headline>}
 
       {subtitle && <Caption>{subtitle}</Caption>}
