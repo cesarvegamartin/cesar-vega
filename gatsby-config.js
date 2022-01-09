@@ -10,8 +10,8 @@ module.exports = {
     siteUrl: `https://cesarvega.dev/`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-image`,
+    { resolve: `gatsby-plugin-react-helmet` },
+    { resolve: `gatsby-plugin-image` },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -19,8 +19,8 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    { resolve: `gatsby-transformer-sharp` },
+    { resolve: `gatsby-plugin-sharp` },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -38,7 +38,7 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    `gatsby-plugin-offline`,
+    { resolve: `gatsby-plugin-offline` },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -55,7 +55,6 @@ module.exports = {
         alias: {
           "@src": "src",
           "@components": "src/components",
-          "@pages": "src/pages",
           "@images": "src/images",
           "@utils": "src/utils",
         },
@@ -69,6 +68,31 @@ module.exports = {
           // require(`precss`),
           // require(`postcss-preset-env`)({ stage: 0 }),
         ],
+      },
+    },
+
+    // MDX
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `sections`,
+        path: `${__dirname}/src/sections`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/src/sections`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        defaultLayouts: {
+          default: require.resolve("./src/components/layout.js"),
+          sections: require.resolve("./src/components/layout.js"),
+        },
       },
     },
   ],
