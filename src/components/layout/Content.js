@@ -14,7 +14,7 @@ const Content = props => {
 
 Content.propTypes = {
   children: PropTypes.any,
-  color: PropTypes.oneOf("white", "grey"),
+  color: PropTypes.oneOf(["white", "grey"]),
   className: PropTypes.string,
   component: PropTypes.any,
 }
