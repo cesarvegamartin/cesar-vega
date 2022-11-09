@@ -25,15 +25,33 @@ const Experience = ({ className, ...customProps }) => (
     <Subtitle style={{ marginBottom: 20 }}>2022</Subtitle>
 
     <Card
+      title="Front-end lider"
+      subtitle="SWEEP TECHNOLOGY"
+      startDate="2022-01"
+      endDate={new Date()}
+      style={{ marginBottom: 20 }}
+    >
+      <ul>
+        <li>
+          Backend con soporte para los 4 productos propios: Javascript, NodeJS y
+          MongoDB
+        </li>
+        <li>
+          Plataforma web para pago de múltiple de facturas: Javascript, React y Redux
+        </li>
+      </ul>
+  </Card>
+
+    <Card
       title="Desarrollador full-stack"
       subtitle="SWEEP TECHNOLOGY"
       startDate="2020-04"
-      endDate={new Date()}
+      endDate="2022-01"
       style={{ marginBottom: 40 }}
     >
       <ul>
         <li>
-          Backend con soporte para los 3 productos propios: Javascript, NodeJS y
+          Backend con soporte para los 4 productos propios: Javascript, NodeJS y
           MongoDB
         </li>
         <li>
@@ -51,7 +69,7 @@ const Experience = ({ className, ...customProps }) => (
       </ul>
     </Card>
 
-    <Subtitle style={{ marginBottom: 20 }}>2020</Subtitle>
+    <Subtitle style={{ marginBottom: 20}}>2020</Subtitle>
 
     <Card
       title="Desarrollador front-end"
@@ -62,20 +80,10 @@ const Experience = ({ className, ...customProps }) => (
     >
       <ul>
         <li>
-          Backend con soporte para los 3 productos propios: Javascript, NodeJS y
-          MongoDB
+          Backoffice de gestión de escaparates para Zara: Javascript, React y Redux
         </li>
         <li>
-          Plataforma web para integrar facturas con los principales sistemas
-          contables: Javascript, React y Redux
-        </li>
-        <li>
-          Plataforma web para que las empresas gestionen y paguen gastos:
-          Javascript, React y Redux
-        </li>
-        <li>
-          Aplicación móvil para que las empresas gestionen y paguen gastos:
-          Javascript y React Native
+          Aplicación de pagos para BBVA: Javascript y Polymer
         </li>
       </ul>
     </Card>
