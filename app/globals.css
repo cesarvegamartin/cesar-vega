@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+/* ─── Theme ─────────────────────────────────────────────────────────── */
+
+@theme {
+  --color-coral: #EC6544;
+  --color-dark: #58585B;
+  --color-grey: #F7F7F9;
+  --color-white: #FFFFFF;
+
+  --font-sans: "Quicksand", system-ui, sans-serif;
+  --font-serif: "Roboto Slab", serif;
+}
+
+/* ─── Base ──────────────────────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0.25px;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+a {
+  color: var(--color-dark);
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+}
+
+a:hover {
+  border-bottom: 1px solid var(--color-dark);
+}
+
+a:active,
+a:active:visited {
+  color: var(--color-coral);
+  border-bottom: 1px solid var(--color-coral);
+}
+
+a:visited {
+  color: var(--color-dark);
+}
+
+ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+/* ─── View Transitions ──────────────────────────────────────────────── */
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root) {
+  animation: fade-out 0.2s ease-out;
+}
+
+::view-transition-new(root) {
+  animation: fade-in 0.3s ease-in;
+}
+
+::view-transition-old(page-content) {
+  animation: slide-out 0.25s ease-out;
+}
+
+::view-transition-new(page-content) {
+  animation: slide-in 0.3s ease-out;
+}
+
+::view-transition-old(page-title) {
+  animation: fade-out 0.15s ease-out;
+}
+
+::view-transition-new(page-title) {
+  animation: fade-in 0.35s ease-in 0.1s both;
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-out {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-8px); }
+}
+
+@keyframes slide-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}

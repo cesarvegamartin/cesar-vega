@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "title": "César Vega",
+    "description": "He trabajado como desarrollador de back-end y front-end, siendo este último mi preferido ya que se acerca más al usuario. Tengo pasión por cómo funcionan las cosas, una cierta obsesión por la experiencia de usuario y me satisface ver el resultado final."
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Introducción",
+    "experience": "Experiencia",
+    "education": "Formación",
+    "contact": "Contacto"
+  },
+  "landing": {
+    "title": "CÉSAR VEGA",
+    "subtitle": "Desarrollador web",
+    "avatarAlt": "Foto de César Vega"
+  },
+  "about": {
+    "title": "Introducción",
+    "quote": "Me encanta este mundo, deseo seguir programando toda mi vida como hasta ahora, con el máximo entusiasmo y dedicación.",
+    "paragraphs": [
+      "Recuerdo el primer día de escuela cuando me había apuntado a algo llamado «programación», tenía tanta curiosidad como miedo ya que no conocía nada acerca del tema, sólo sabía que se me daban bien las «cosas de ordenadores». Hoy en día ese miedo se ha convertido en seguridad y en mi mayor virtud.",
+      "Empecé con Java desarrollando en Android y aunque me gustaba, decidí hacer un curso de web. Es cuando vi el potencial que ofrece el desarrollo web: su sencillez y flexibilidad. Me di cuenta de que la mayoría de los proyectos se podrían hacer con esa tecnología y me resultaba emocionante, ¡había encontrado la rama que me gustaba!",
+      "He trabajado como desarrollador de back-end y front-end, siendo este último mi preferido ya que se acerca más al usuario. Tengo pasión por cómo funcionan las cosas, una cierta obsesión por la experiencia de usuario y me satisface ver el resultado final.",
+      "Hasta aquí mi turno, me gustaría seguir creciendo personal y profesionalmente en una gran empresa, si tienes tanto entusiasmo como yo por este mundo, ¡no dudes en contactar conmigo!"
+    ]
+  },
+  "experience": {
+    "title": "Experiencia",
+    "quote": "Siempre me ha gustado probar un poco de todo aunque mi mayor experiencia ha sido como desarrollador full-stack y front-end.",
+    "years": [
+      {
+        "year": "2022",
+        "jobs": [
+          {
+            "title": "Front-end líder",
+            "company": "SWEEP TECHNOLOGY",
+            "startDate": "2022-01",
+            "endDate": "now",
+            "tasks": [
+              "Backend con soporte para los 4 productos propios: Javascript, NodeJS y MongoDB",
+              "Plataforma web para pago múltiple de facturas: Javascript, React y Redux"
+            ]
+          },
+          {
+            "title": "Desarrollador full-stack",
+            "company": "SWEEP TECHNOLOGY",
+            "startDate": "2020-04",
+            "endDate": "2022-01",
+            "tasks": [
+              "Backend con soporte para los 4 productos propios: Javascript, NodeJS y MongoDB",
+              "Plataforma web para integrar facturas con los principales sistemas contables: Javascript, React y Redux",
+              "Plataforma web para que las empresas gestionen y paguen gastos: Javascript, React y Redux",
+              "Aplicación móvil para que las empresas gestionen y paguen gastos: Javascript y React Native"
+            ]
+          }
+        ]
+      },
+      {
+        "year": "2020",
+        "jobs": [
+          {
+            "title": "Desarrollador front-end",
+            "company": "SNGULAR",
+            "startDate": "2018-05",
+            "endDate": "2020-03",
+            "tasks": [
+              "Backoffice de gestión de escaparates para Zara: Javascript, React y Redux",
+              "Aplicación de pagos para BBVA: Javascript y Polymer"
+            ]
+          }
+        ]
+      },
+      {
+        "year": "2018",
+        "jobs": [
+          {
+            "title": "Desarrollador front-end",
+            "company": "COGNIZANT",
+            "startDate": "2017-12",
+            "endDate": "2018-05",
+            "tasks": [
+              "Plataforma web área de inversiones para KBC Bank: Javascript, CoffeeScript y AngularJS"
+            ]
+          },
+          {
+            "title": "Desarrollador full-stack",
+            "company": "FREELANCE",
+            "startDate": "2015-03",
+            "endDate": "2018-12",
+            "tasks": [
+              "Colaboración y soporte para Euphorbia Comunicación: Javascript, Angular y PHP",
+              "Varios proyectos independientes para pequeñas empresas y freelancers"
+            ]
+          }
+        ]
+      },
+      {
+        "year": "2017",
+        "jobs": [
+          {
+            "title": "Desarrollador full-stack",
+            "company": "EUPHORBIA COMUNICACIÓN",
+            "startDate": "2016-01",
+            "endDate": "2017-12",
+            "tasks": [
+              "MÚLTIPLES PROYECTOS (los más destacados):",
+              "Web de envío de comida semanal a domicilio para Comer y Punto: Javascript, AngularJS, PHP, Slim Framework y PL/SQL",
+              "Web corporativa para Farming Agrícola: Javascript, AngularJS, PHP y Slim Framework",
+              "Ecommerce con blog para El Club del Zapato: Javascript, JQuery, PHP y conexiones a datos de ERP"
+            ]
+          }
+        ]
+      },
+      {
+        "year": "2013",
+        "jobs": [
+          {
+            "title": "Desarrollador móvil",
+            "company": "CIDAUT",
+            "startDate": "2013-02",
+            "endDate": "2013-12",
+            "tasks": [
+              "Aplicación Android para que personas discapacitadas puedan comunicarse: Android"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Formación",
+    "quote": "Me considero una persona autodidacta y curiosa, me entusiasma investigar nuevos desarrollos y escudriñar los que funcionan correctamente. Como todo desarrollador estoy siempre a la última.",
+    "entries": [
+      {
+        "year": "2019",
+        "items": [
+          {
+            "title": "Professional Scrum Master",
+            "institution": "SCRUM.ORG",
+            "startDate": "2019-11"
+          }
+        ]
+      },
+      {
+        "year": "2013",
+        "items": [
+          {
+            "title": "Técnico Superior en Desarrollo de Aplicaciones Multiplataforma",
+            "institution": "IES JULIÁN MARÍAS",
+            "startDate": "2011-09",
+            "endDate": "2013-06"
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "quote": "Hasta aquí mi turno, si tienes tanto entusiasmo como yo por este mundo, ¡no dudes en contactar conmigo!",
+    "emailLabel": "Enviar email",
+    "linkedinLabel": "Abrir perfil en LinkedIn",
+    "email": "hola.cesar.vega@gmail.com",
+    "linkedin": "cesarvegamartin",
+    "linkedinUrl": "https://es.linkedin.com/in/cesarvegamartin",
+    "googleIconAlt": "Icono de Google",
+    "linkedinIconAlt": "Icono de LinkedIn"
+  },
+  "notFound": {
+    "title": "404: No encontrado",
+    "subtitle": "La página a la que intentas acceder no existe",
+    "link": "Ir al inicio"
+  },
+  "dateFormat": {
+    "duration": {
+      "year": "año",
+      "years": "años",
+      "month": "mes",
+      "months": "meses",
+      "and": "y"
+    }
+  }
+}
