@@ -1,12 +1,31 @@
-const formatDate = (date: Date): string => {
-	const formatter = new Intl.DateTimeFormat("es-ES", {
+import type { DurationStrings, Locale } from "@lib/i18n";
+
+const localeMap: Record<string, string> = {
+	es: "es-ES",
+	en: "en-GB",
+};
+
+const formatDate = (date: Date, locale: Locale): string => {
+	const formatter = new Intl.DateTimeFormat(localeMap[locale] ?? locale, {
 		month: "long",
 		year: "numeric",
 	});
 	return formatter.format(date).toUpperCase();
 };
 
-const calculateDuration = (start: Date, end: Date): string => {
+function pluralize(
+	count: number,
+	one: string,
+	other: string,
+): string {
+	return count === 1 ? one : other.replace("{count}", String(count));
+}
+
+const calculateDuration = (
+	start: Date,
+	end: Date,
+	duration: DurationStrings,
+): string => {
 	let months =
 		(end.getFullYear() - start.getFullYear()) * 12 +
 		(end.getMonth() - start.getMonth());
@@ -19,29 +38,46 @@ const calculateDuration = (start: Date, end: Date): string => {
 	const remainingMonths = months % 12;
 
 	if (years === 0) {
-		return remainingMonths === 1 ? "1 mes" : `${remainingMonths} meses`;
+		return pluralize(
+			remainingMonths,
+			duration.month_one,
+			duration.month_other,
+		);
 	}
+
+	const yearStr = pluralize(years, duration.year_one, duration.year_other);
 
 	if (remainingMonths === 0) {
-		return years === 1 ? "1 año" : `${years} años`;
+		return yearStr;
 	}
 
-	const yearStr = years === 1 ? "1 año" : `${years} años`;
-	const monthStr =
-		remainingMonths === 1 ? "1 mes" : `${remainingMonths} meses`;
-	return `${yearStr} y ${monthStr}`;
+	const monthStr = pluralize(
+		remainingMonths,
+		duration.month_one,
+		duration.month_other,
+	);
+	return `${yearStr} ${duration.and} ${monthStr}`;
 };
 
 export default function formatInterval(
+	locale: Locale,
+	duration: DurationStrings,
 	...dates: (string | Date)[]
 ): string {
-	const parsedDates = dates.filter((d) => d).map((d) => new Date(d));
+	const parsedDates = dates
+		.filter((d) => d)
+		.map((d) => {
+			if (typeof d === "string" && d === "now") {
+				return new Date();
+			}
+			return new Date(d);
+		});
 
 	switch (parsedDates.length) {
 		case 1:
-			return formatDate(parsedDates[0]);
+			return formatDate(parsedDates[0], locale);
 		case 2:
-			return `${parsedDates.map(formatDate).join(" - ")}    (${calculateDuration(parsedDates[0], parsedDates[1])})`;
+			return `${parsedDates.map((d) => formatDate(d, locale)).join(" - ")}    (${calculateDuration(parsedDates[0], parsedDates[1], duration)})`;
 		default:
 			throw new Error("formatInterval only takes 1 or 2 dates");
 	}

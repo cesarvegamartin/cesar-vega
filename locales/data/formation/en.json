@@ -1,0 +1,22 @@
+{
+	"metadata": {
+		"title": "Education"
+	},
+	"title": "Education",
+	"quote": "I consider myself a self-taught and curious person. I am enthusiastic about researching\nnew developments and scrutinising those that work correctly.\nLike every developer, I am always up to date.",
+	"entries": [
+		{
+			"year": "2019",
+			"title": "Professional Scrum Master",
+			"institution": "SCRUM.ORG",
+			"startDate": "2019-11"
+		},
+		{
+			"year": "2013",
+			"title": "Higher Technician in Multi-platform Application Development",
+			"institution": "IES JULIÁN MARÍAS",
+			"startDate": "2011-09",
+			"endDate": "2013-06"
+		}
+	]
+}

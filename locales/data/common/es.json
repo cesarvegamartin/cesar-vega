@@ -1,0 +1,31 @@
+{
+	"siteMetadata": {
+		"title": {
+			"default": "César Vega",
+			"template": "César Vega | %s"
+		},
+		"description": "He trabajado como desarrollador de back-end y front-end, siendo esté último mi preferido ya que se acerca más al usuario. Tengo pasión por cómo funcionan las cosas, una cierta obsesión por la experiencia de usuario y me satisface ver el resultado final.",
+		"authors": [{ "name": "César Vega", "url": "https://cesarvega.dev" }],
+		"openGraph": {
+			"title": "César Vega",
+			"description": "He trabajado como desarrollador de back-end y front-end, siendo esté último mi preferido ya que se acerca más al usuario.",
+			"url": "https://cesarvega.dev",
+			"siteName": "César Vega",
+			"type": "website",
+			"locale": "es_ES"
+		},
+		"twitter": {
+			"card": "summary",
+			"title": "César Vega",
+			"description": "He trabajado como desarrollador de back-end y front-end, siendo esté último mi preferido ya que se acerca más al usuario."
+		}
+	},
+	"duration": {
+		"year_one": "1 año",
+		"year_other": "{count} años",
+		"month_one": "1 mes",
+		"month_other": "{count} meses",
+		"and": "y",
+		"present": "ACTUALIDAD"
+	}
+}

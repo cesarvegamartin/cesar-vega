@@ -1,0 +1,35 @@
+import type { Metadata } from "next";
+import {
+	type Locale,
+	type ContactData,
+	isLocale,
+	defaultLocale,
+	getPageData,
+} from "@lib/i18n";
+import Content from "@components/layout/Content";
+import Contact from "@components/sections/Contact";
+
+type Params = { lang: string };
+
+export async function generateMetadata({
+	params,
+}: { params: Promise<Params> }): Promise<Metadata> {
+	const { lang } = await params;
+	const locale: Locale = isLocale(lang) ? lang : defaultLocale;
+	const data = getPageData<ContactData>("contact", locale);
+	return { title: data.metadata.title };
+}
+
+export default async function ContactPage({
+	params,
+}: { params: Promise<Params> }) {
+	const { lang } = await params;
+	const locale: Locale = isLocale(lang) ? lang : defaultLocale;
+	const data = getPageData<ContactData>("contact", locale);
+
+	return (
+		<Content color="grey">
+			<Contact data={data} />
+		</Content>
+	);
+}

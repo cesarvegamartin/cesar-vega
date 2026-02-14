@@ -1,15 +1,23 @@
-import type { Metadata } from "next";
+import {
+	type NotFoundData,
+	defaultLocale,
+	getPageData,
+} from "@lib/i18n";
 import Content from "@components/layout/Content";
-import NotFound from "@components/sections/NotFound";
+import NotFoundSection from "@components/sections/NotFound";
 
-export const metadata: Metadata = {
-	title: "404: No encontrado",
-};
+export default function RootNotFoundPage() {
+	const data = getPageData<NotFoundData>("not-found", defaultLocale);
 
-export default function NotFoundPage() {
 	return (
-		<Content color="white">
-			<NotFound />
-		</Content>
+		<html lang={defaultLocale}>
+			<body>
+				<main>
+					<Content color="white">
+						<NotFoundSection data={data} lang={defaultLocale} />
+					</Content>
+				</main>
+			</body>
+		</html>
 	);
 }

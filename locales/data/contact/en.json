@@ -1,0 +1,23 @@
+{
+	"metadata": {
+		"title": "Contact"
+	},
+	"title": "Contact",
+	"quote": "That is all from me. If you are as enthusiastic as I am about this world,\ndo not hesitate to get in touch!",
+	"links": [
+		{
+			"icon": "/images/icon-google.svg",
+			"iconAlt": "Google icon",
+			"label": "hola.cesar.vega@gmail.com",
+			"href": "mailto:hola.cesar.vega@gmail.com",
+			"linkTitle": "Send email"
+		},
+		{
+			"icon": "/images/icon-linkedin.svg",
+			"iconAlt": "LinkedIn icon",
+			"label": "cesarvegamartin",
+			"href": "https://es.linkedin.com/in/cesarvegamartin",
+			"linkTitle": "Open LinkedIn profile"
+		}
+	]
+}

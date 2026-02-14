@@ -1,0 +1,23 @@
+{
+	"metadata": {
+		"title": "Contacto"
+	},
+	"title": "Contacto",
+	"quote": "Hasta aquí mi turno, si tienes tanto entusiasmo como yo por este mundo,\n¡no dudes en contactar conmigo!",
+	"links": [
+		{
+			"icon": "/images/icon-google.svg",
+			"iconAlt": "Icono de Google",
+			"label": "hola.cesar.vega@gmail.com",
+			"href": "mailto:hola.cesar.vega@gmail.com",
+			"linkTitle": "Enviar email"
+		},
+		{
+			"icon": "/images/icon-linkedin.svg",
+			"iconAlt": "Icono de Linkedin",
+			"label": "cesarvegamartin",
+			"href": "https://es.linkedin.com/in/cesarvegamartin",
+			"linkTitle": "Abrir perfil en linkedin"
+		}
+	]
+}

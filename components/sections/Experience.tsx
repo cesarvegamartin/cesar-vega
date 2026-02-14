@@ -1,175 +1,75 @@
+import type { ExperienceData, Locale, DurationStrings } from "@lib/i18n";
 import Title from "@components/typography/Title";
 import Subtitle from "@components/typography/Subtitle";
 import Flex from "@components/layout/Flex";
 import Blockquote from "@components/display/Blockquote";
 import Card from "@components/display/Card";
 
+interface ExperienceProps {
+	data: ExperienceData;
+	locale: Locale;
+	duration: DurationStrings;
+	className?: string;
+}
+
 export default function Experience({
+	data,
+	locale,
+	duration,
 	className = "",
-}: { className?: string }) {
+}: ExperienceProps) {
 	return (
 		<Flex
 			className={className}
 			flexDirection="column"
 			justifyContent="center"
 		>
-			<Title style={{ marginBottom: 80 }}>Experiencia</Title>
+			<Title style={{ marginBottom: 80 }}>{data.title}</Title>
 
 			<Blockquote style={{ marginBottom: 80 }}>
-				Siempre me ha gustado probar un poco de todo aunque
-				<br />
-				mi mayor experiencia ha sido como desarrollador full-stack y
-				front-end.
+				{data.quote.split("\n").map((line, i, arr) => (
+					<span key={line}>
+						{line}
+						{i < arr.length - 1 && <br />}
+					</span>
+				))}
 			</Blockquote>
 
-			<Subtitle style={{ marginBottom: 20 }}>2022</Subtitle>
+			{data.entries.map((entry, idx) => {
+				const isLast = idx === data.entries.length - 1;
+				const nextHasYear =
+					!isLast && data.entries[idx + 1].year;
 
-			<Card
-				title="Front-end lider"
-				subtitle="SWEEP TECHNOLOGY"
-				startDate="2022-01"
-				endDate={new Date().toISOString()}
-				style={{ marginBottom: 20 }}
-			>
-				<ul>
-					<li>
-						Backend con soporte para los 4 productos propios:
-						Javascript, NodeJS y MongoDB
-					</li>
-					<li>
-						Plataforma web para pago de múltiple de facturas:
-						Javascript, React y Redux
-					</li>
-				</ul>
-			</Card>
+				return (
+					<div key={`${entry.company}-${entry.startDate}`}>
+						{entry.year && (
+							<Subtitle style={{ marginBottom: 20 }}>
+								{entry.year}
+							</Subtitle>
+						)}
 
-			<Card
-				title="Desarrollador full-stack"
-				subtitle="SWEEP TECHNOLOGY"
-				startDate="2020-04"
-				endDate="2022-01"
-				style={{ marginBottom: 40 }}
-			>
-				<ul>
-					<li>
-						Backend con soporte para los 4 productos propios:
-						Javascript, NodeJS y MongoDB
-					</li>
-					<li>
-						Plataforma web para integrar facturas con los
-						principales sistemas contables: Javascript, React y
-						Redux
-					</li>
-					<li>
-						Plataforma web para que las empresas gestionen y paguen
-						gastos: Javascript, React y Redux
-					</li>
-					<li>
-						Aplicación móvil para que las empresas gestionen y
-						paguen gastos: Javascript y React Native
-					</li>
-				</ul>
-			</Card>
-
-			<Subtitle style={{ marginBottom: 20 }}>2020</Subtitle>
-
-			<Card
-				title="Desarrollador front-end"
-				subtitle="SNGULAR"
-				startDate="2018-05"
-				endDate="2020-03"
-				style={{ marginBottom: 40 }}
-			>
-				<ul>
-					<li>
-						Backoffice de gestión de escaparates para Zara:
-						Javascript, React y Redux
-					</li>
-					<li>
-						Aplicación de pagos para BBVA: Javascript y Polymer
-					</li>
-				</ul>
-			</Card>
-
-			<Subtitle style={{ marginBottom: 20 }}>2018</Subtitle>
-
-			<Card
-				title="Desarrollador front-end"
-				subtitle="COGNIZANT"
-				startDate="2017-12"
-				endDate="2018-05"
-				style={{ marginBottom: 20 }}
-			>
-				<ul>
-					<li>
-						Plataforma web area de inversiones para KBC Bank:
-						Javascript, coffescript y AngularJS
-					</li>
-				</ul>
-			</Card>
-
-			<Card
-				title="Desarrollador full-stack"
-				subtitle="FREELANCE"
-				startDate="2015-03"
-				endDate="2018-12"
-				style={{ marginBottom: 40 }}
-			>
-				<ul>
-					<li>
-						Colaboración y soporte para Euphorbia Comunicación:
-						Javascript, Angular y PHP
-					</li>
-					<li>
-						Varios proyectos independientes para pequeñas empresas y
-						freelancers
-					</li>
-				</ul>
-			</Card>
-
-			<Subtitle style={{ marginBottom: 20 }}>2017</Subtitle>
-
-			<Card
-				title="Desarrollador full-stack"
-				subtitle="EUPHORBIA COMUNICACIÓN"
-				startDate="2016-01"
-				endDate="2017-12"
-				style={{ marginBottom: 40 }}
-			>
-				<ul>
-					<li>MULTIPLES PROYECTOS (los más destacados):</li>
-					<li>
-						Web de envio de comida semanal a domicilio para Comer y
-						Punto: Javascript, AngularJS, PHP, Slim Framework y
-						PL/SQL
-					</li>
-					<li>
-						Web corporativa para Farming Agrícola: Javascript,
-						AngularJS, PHP y Slim Framework
-					</li>
-					<li>
-						Ecommerce con blog para El Club del Zapato: Javascript,
-						JQuery, PHP y conexiones a datos de ERP
-					</li>
-				</ul>
-			</Card>
-
-			<Subtitle style={{ marginBottom: 20 }}>2013</Subtitle>
-
-			<Card
-				title="Desarrollador móvil"
-				subtitle="CIDAUT"
-				startDate="2013-02"
-				endDate="2013-12"
-				style={{ marginBottom: 40 }}
-			>
-				<ul>
-					<li>
-						Aplicación Android para que personas discapacitadas
-						puedan comunicarse: Android
-					</li>
-				</ul>
-			</Card>
+						<Card
+							title={entry.title}
+							subtitle={entry.company}
+							startDate={entry.startDate}
+							endDate={entry.endDate}
+							locale={locale}
+							duration={duration}
+							style={{
+								marginBottom: nextHasYear || isLast ? 40 : 20,
+							}}
+						>
+							{entry.tasks && entry.tasks.length > 0 && (
+								<ul>
+									{entry.tasks.map((task) => (
+										<li key={task}>{task}</li>
+									))}
+								</ul>
+							)}
+						</Card>
+					</div>
+				);
+			})}
 		</Flex>
 	);
 }

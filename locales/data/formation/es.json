@@ -1,0 +1,22 @@
+{
+	"metadata": {
+		"title": "Formación"
+	},
+	"title": "Formación",
+	"quote": "Me considero una persona autodidacta y curiosa, me entusiasma investigar\nnuevos desarrollos y escudriñar los que funcionan correctamente.\nComo todo desarrollador estoy siempre a la última.",
+	"entries": [
+		{
+			"year": "2019",
+			"title": "Professional Scrum Master",
+			"institution": "SCRUM.ORG",
+			"startDate": "2019-11"
+		},
+		{
+			"year": "2013",
+			"title": "Técnico Superior en Desarrollo de Aplicaciones Multiplataforma",
+			"institution": "IES JULIÁN MARÍAS",
+			"startDate": "2011-09",
+			"endDate": "2013-06"
+		}
+	]
+}

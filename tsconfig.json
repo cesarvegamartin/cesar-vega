@@ -31,6 +31,12 @@
       ],
       "@styles/*": [
         "./styles/*"
+      ],
+      "@lib/*": [
+        "./lib/*"
+      ],
+      "@locales/*": [
+        "./locales/*"
       ]
     }
   },

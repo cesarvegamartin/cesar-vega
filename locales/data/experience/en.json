@@ -1,0 +1,86 @@
+{
+	"metadata": {
+		"title": "Experience"
+	},
+	"title": "Experience",
+	"quote": "I have always enjoyed trying a bit of everything although\nmy greatest experience has been as a full-stack and front-end developer.",
+	"entries": [
+		{
+			"year": "2022",
+			"title": "Lead front-end developer",
+			"company": "SWEEP TECHNOLOGY",
+			"startDate": "2022-01",
+			"endDate": "now",
+			"tasks": [
+				"Backend supporting 4 proprietary products: Javascript, NodeJS and MongoDB",
+				"Web platform for multiple invoice payments: Javascript, React and Redux"
+			]
+		},
+		{
+			"title": "Full-stack developer",
+			"company": "SWEEP TECHNOLOGY",
+			"startDate": "2020-04",
+			"endDate": "2022-01",
+			"tasks": [
+				"Backend supporting 4 proprietary products: Javascript, NodeJS and MongoDB",
+				"Web platform to integrate invoices with major accounting systems: Javascript, React and Redux",
+				"Web platform for companies to manage and pay expenses: Javascript, React and Redux",
+				"Mobile app for companies to manage and pay expenses: Javascript and React Native"
+			]
+		},
+		{
+			"year": "2020",
+			"title": "Front-end developer",
+			"company": "SNGULAR",
+			"startDate": "2018-05",
+			"endDate": "2020-03",
+			"tasks": [
+				"Window-display management back-office for Zara: Javascript, React and Redux",
+				"Payment application for BBVA: Javascript and Polymer"
+			]
+		},
+		{
+			"year": "2018",
+			"title": "Front-end developer",
+			"company": "COGNIZANT",
+			"startDate": "2017-12",
+			"endDate": "2018-05",
+			"tasks": [
+				"Investment area web platform for KBC Bank: Javascript, CoffeeScript and AngularJS"
+			]
+		},
+		{
+			"title": "Full-stack developer",
+			"company": "FREELANCE",
+			"startDate": "2015-03",
+			"endDate": "2018-12",
+			"tasks": [
+				"Collaboration and support for Euphorbia Comunicación: Javascript, Angular and PHP",
+				"Various independent projects for small businesses and freelancers"
+			]
+		},
+		{
+			"year": "2017",
+			"title": "Full-stack developer",
+			"company": "EUPHORBIA COMUNICACIÓN",
+			"startDate": "2016-01",
+			"endDate": "2017-12",
+			"tasks": [
+				"MULTIPLE PROJECTS (highlights):",
+				"Weekly home food delivery website for Comer y Punto: Javascript, AngularJS, PHP, Slim Framework and PL/SQL",
+				"Corporate website for Farming Agrícola: Javascript, AngularJS, PHP and Slim Framework",
+				"E-commerce with blog for El Club del Zapato: Javascript, JQuery, PHP and ERP data connections"
+			]
+		},
+		{
+			"year": "2013",
+			"title": "Mobile developer",
+			"company": "CIDAUT",
+			"startDate": "2013-02",
+			"endDate": "2013-12",
+			"tasks": [
+				"Android application to help disabled people communicate: Android"
+			]
+		}
+	]
+}
