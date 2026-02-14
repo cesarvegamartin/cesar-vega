@@ -1,5 +1,5 @@
 import { formatInterval } from "@/lib/format-interval"
-import type { Dictionary } from "@/app/[lang]/dictionaries"
+import type { Dictionary } from "@/locales"
 import { cardStyles } from "./card.styles"
 
 type CardProps = {

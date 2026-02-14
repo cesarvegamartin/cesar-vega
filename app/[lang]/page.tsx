@@ -1,6 +1,6 @@
 import Image from "next/image"
-import { getDictionary, hasLocale } from "./dictionaries"
-import type { Locale } from "./dictionaries"
+import { getDictionary, hasLocale } from "@/locales"
+import type { Locale } from "@/locales"
 import { notFound } from "next/navigation"
 import { landingStyles } from "@/components/ui/landing.styles"
 

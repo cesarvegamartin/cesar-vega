@@ -1,6 +1,6 @@
 import { Roboto_Slab, Quicksand } from "next/font/google"
-import { getDictionary, hasLocale, locales } from "./dictionaries"
-import type { Locale } from "./dictionaries"
+import { getDictionary, hasLocale, locales } from "@/locales"
+import type { Locale } from "@/locales"
 import { Nav } from "@/components/ui/nav"
 import { headers } from "next/headers"
 import { notFound } from "next/navigation"

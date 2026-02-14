@@ -1,4 +1,4 @@
-import type { Dictionary } from "@/app/[lang]/dictionaries"
+import type { Dictionary } from "@/locales"
 
 function formatMonth(date: Date, locale: string): string {
   return new Intl.DateTimeFormat(locale, { month: "long", year: "numeric" })

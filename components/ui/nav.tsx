@@ -1,5 +1,5 @@
 import Link from "next/link"
-import type { Dictionary, Locale } from "@/app/[lang]/dictionaries"
+import type { Dictionary, Locale } from "@/locales"
 import { LangSwitcher } from "./lang-switcher"
 import { navStyles } from "./nav.styles"
 

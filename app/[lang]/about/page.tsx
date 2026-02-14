@@ -1,5 +1,5 @@
-import { getDictionary, hasLocale } from "../dictionaries"
-import type { Locale } from "../dictionaries"
+import { getDictionary, hasLocale } from "@/locales"
+import type { Locale } from "@/locales"
 import { notFound } from "next/navigation"
 import { Section } from "@/components/ui/section"
 import { Blockquote } from "@/components/ui/blockquote"

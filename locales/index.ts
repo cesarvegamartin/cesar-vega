@@ -1,4 +1,4 @@
-import type esDict from "./dictionaries/es.json"
+import type esDict from "./es.json"
 
 export type Dictionary = typeof esDict
 export type Locale = "es" | "en"
@@ -13,8 +13,8 @@ export function hasLocale(lang: string): lang is Locale {
 export { locales, defaultLocale }
 
 const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
-  es: () => import("./dictionaries/es.json").then((m) => m.default),
-  en: () => import("./dictionaries/en.json").then((m) => m.default),
+  es: () => import("./es.json").then((m) => m.default),
+  en: () => import("./en.json").then((m) => m.default),
 }
 
 export async function getDictionary(lang: Locale): Promise<Dictionary> {
